@@ -31,6 +31,12 @@ public class App
                                     .getDouble(args[2])
                     );
                     break;
+                case "string":
+                    System.out.println(
+                            iniFile.getSection(args[1])
+                                    .getString(args[2])
+                    );
+                    break;
                 default:
                     System.err.println("Invalid type");
             }
